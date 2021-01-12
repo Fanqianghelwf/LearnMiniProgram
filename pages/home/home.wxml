@@ -1,0 +1,16 @@
+<text class="title">樊强喜欢李文菲</text>
+<!--1.微信小程序的数据绑定 ---{{}} mustache  -->
+<view>姓名： {{name}}</view>
+<view >年龄：{{age+20}} </view>
+<view>性别：{{sex}}</view>
+<view wx:for="{{students}}">{{item.name}} --{{item.age}}岁</view>
+<view>当前计数：{{count}}</view>
+<button size="mini" bindtap="handleBtnClick">+</button>
+<button bindtap="HandBtnSub" size="mini">-</button>
+<view wx:for="{{numner}}" wx:for-item="i">
+  <view wx:for="{{numner}}" wx:for-item="j">
+   <view wx:if="{{i<=j}}">
+     {{i}}*{{j}}={{i*j}}
+   </view>
+  </view>
+</view>
