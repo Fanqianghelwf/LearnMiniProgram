@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/home/home"
+    "pages/home/home",
+    "pages/about/about",
+    "pages/hosption/hosption"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -9,6 +11,29 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "pages/Images/icon_component.png",
+      "selectedIconPath": "pages/Images/icon_component.png"
+      },
+      {
+      "pagePath": "pages/about/about",
+      "text": "个人信息",
+      "iconPath": "pages/Images/icon_API.png",
+      "selectedIconPath": "pages/Images/icon_API.png"
+      },
+      {
+      "pagePath": "pages/hosption/hosption",
+      "text": "公司信息",
+      "iconPath": "pages/Images/icon_API_HL.png",
+      "selectedIconPath": "pages/Images/icon_API_HL.png"
+      }
+  ]
   },
   "sitemapLocation": "sitemap67.json"
 }
