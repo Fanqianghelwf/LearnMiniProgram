@@ -1,3 +1,7 @@
+
+const app=getApp()
+console.log(app.globalData.age)
+
 Page({
     data:{
      name:"樊强",
@@ -25,5 +29,9 @@ Page({
     this.setData({
       count:this.data.count-1
     })
+   },
+   handleGetUserInfo(event){
+     console.log(event)
+
    }
 })
